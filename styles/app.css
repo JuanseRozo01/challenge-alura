@@ -1,0 +1,325 @@
+body{
+    display: flex;
+    background-color: #F3F5FC;
+    font-family: "Inter", sans-serif;
+}
+
+.img{    
+    width: 153px;
+    height: 49px;
+}
+
+.texto{
+    height: 32rem;
+    width: 53.5rem;
+    border: none;
+    background-color: #F3F5FC;
+    margin-top: 3.5rem;
+    outline: none;
+    color: #0A3871;
+    font-size: 25px;
+    resize: none;
+    
+}
+
+textarea::placeholder{
+    color: #0A3871;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 25px
+  }
+
+  .alert__msj{
+    display: flex;
+    align-items: center;
+    color: #495057;
+    gap: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border-radius: 18px;
+    background-color: #273488;
+    color: white;
+    border: solid 1px blue;
+    padding: 19px 135px 19px 135px;
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn2 {
+    border-radius: 18px;
+    background-color: #F3F5FC;
+    color: #273488;
+    border: solid 1px #273488;
+    padding: 19px 131px 19px 131px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.msg-box{
+    border: 1px solid #ccc;
+    border-radius: 32px;
+    margin-top: 2rem;
+    align-content: center;
+    font-family: "Inter", sans-serif;
+    margin-left: 56px;
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.text{
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 32px 0 32px;
+    width: 278px;
+    display: inline-table;
+  } 
+  
+  .title{
+    font-size: 26px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+  }
+  
+  .parrafo{
+     color: #495057;
+     align-items: center;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+     margin-top: 8px;
+     text-align: center;
+   }
+
+   .copy{
+    border-radius: 18px;
+    background: transparent;
+    color: #273488;
+    border: solid 1px #273488;
+    padding: 19px 131px 19px 131px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}  
+
+.hidden{
+    display: none;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    --s: 25px;
+    --g :5px;  
+    
+    width: calc(2*(1.353*var(--s) + var(--g)));
+    aspect-ratio: 1;
+    background:
+      linear-gradient(#ff1818 0 0) left/50% 100% no-repeat,
+      conic-gradient(from -90deg at var(--s) calc(0.353*var(--s)),
+        #fff 135deg,#666 0 270deg,#aaa 0); 
+    background-blend-mode: multiply;
+    --_m:
+      linear-gradient(to bottom right,
+         #0000 calc(0.25*var(--s)),#000 0 calc(100% - calc(0.25*var(--s)) - 1.414*var(--g)),#0000 0),
+      conic-gradient(from -90deg at right var(--g) bottom var(--g),#000 90deg,#0000 0);
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    background-size:   50% 50%;
+    -webkit-mask-size: 50% 50%;
+            mask-size: 50% 50%;
+    -webkit-mask-composite: source-in;
+            mask-composite: intersect;
+    animation: l9 1.5s infinite;
+  }
+  @keyframes l9 {
+    0%,12.5%    {background-position:0% 0%,0 0}
+    12.6%,37.5% {background-position:100% 0%,0 0}
+    37.6%,62.5% {background-position:100% 100%,0 0}
+    62.6%,87.5% {background-position:0% 100%,0 0}
+    87.6%,100%  {background-position:0% 0%,0 0}
+  }
+  
+  @media (max-width: 768px){
+
+    body{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .img {
+      width: 52px;
+      height: 49px;
+  }
+
+    .result_img{
+      display: none;
+    }
+
+    .texto {
+      height: 32rem;
+      width: 45.5rem;
+      border: none;
+      background-color: #F3F5FC;
+      margin-top: 3.5rem;
+      outline: none;
+      color: #0A3871;
+      font-size: 25px;
+      resize: none;
+      margin-left: 1rem;
+  }
+
+  .msg-box {
+    border: 1px solid #ccc;
+    border-radius: 32px;
+    margin-top: 1rem;
+    align-content: center;
+    font-family: "Inter", sans-serif;
+    margin-left: 1rem;
+    height: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 726px;
+}
+
+.text{
+  display: inline-table;
+  width: 411px;
+}
+
+.title{
+  font-size: 24px;
+}
+
+.alert__msj{
+  margin-left: 1rem;
+}
+
+.btn{
+  margin-left: 1rem;
+}
+
+.copy{
+  padding: 19px 300px 19px 300px;
+  position: relative;
+  top: -12px;
+}
+  }
+
+  @media (max-width: 320px){
+    .img {
+      width: 43px;
+      height: 49px;
+  }
+  
+  
+  .texto {
+      height: 32rem;
+      width: 21.5rem;
+      border: none;
+      background-color: #F3F5FC;
+      margin-top: 3.5rem;
+      outline: none;
+      color: #0A3871;
+      font-size: 25px;
+      resize: none;
+      margin-left:8px;
+  }
+  
+  .btn {
+      border-radius: 18px;
+      background-color: #273488;
+      color: white;
+      border: solid 1px blue;
+      padding: 19px 135px 19px 135px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 16px;
+      margin-left: 0;
+  }
+  
+  .btn2 {
+      border-radius: 18px;
+      background-color: #F3F5FC;
+      color: #273488;
+      border: solid 1px #273488;
+      padding: 19px 114px 19px 131px;
+      font-weight: bold;
+      font-size: 16px;
+  }
+  
+  .msg-box {
+      border: 1px solid #ccc;
+      border-radius: 32px;
+      margin-top: 2rem;
+      align-content: center;
+      font-family: "Inter", sans-serif;
+      margin-left: 6px;
+      height: 16rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 339px;
+  }
+
+  .text{
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 32px 0 32px;
+    width: 278px;
+    /* display: inline-table; */
+  } 
+
+
+   .title{
+    font-size: 26px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+  }
+  
+  .parrafo{
+     color: #495057;
+     align-items: center;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+     margin-top: 8px;
+     text-align: center;
+   }
+
+   .alert__msj{
+    margin-left: 5px;
+   }
+
+  .result_img{
+    display: none;
+  }
+
+  .copy{
+    padding: 19px 127px 19px 127px;
+    position: relative;
+    top: 3px;
+  }
+
+
+}
